@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iglesia de Cristo Misíonera</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="icon" type="favicon/x-icon" href="img/logo_transparente.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/carrousel.css" /> 
+    <link rel="stylesheet" href="fontello-b4a708b2/css/animation.css">
+</head>
+<body id="body-tesoreria" style="line-height: 1.2;">
+
+    <header class="header header-tesoreria">
+        <div class="contenedor">
+            <div class="barra">
+                <a href="index.html" class="logo">
+                    <h1 class="logo__nombre no-margin centrar-texto"><span class="demo-icon icon-logo_transparente logo__bold">&#xe800;</span>ICM</h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="servicios.html" class="navegacion__enlace">Servicios</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>        
+    </header>
+    <main class="contenedor">
+        <h5 class="centrar-texto">Tesorería</h5>
+        <!-- <div class="contacto-bg"></div> -->
+        <form class="formulario">
+           <div class="campo">
+               <label class="campo__label" for="nombre">Iglesia:</label>
+               <input 
+                   class="campo__field"
+                   type="text" 
+                   placeholder="Tu Nombre" 
+                   id="nombre"
+                   value="Cristo Misionera San Juan de Dios"           
+               >
+           </div>
+           <div class="campo">
+               <label class="campo__label" for="fecha">Fecha:</label>
+               <input 
+                   class="campo__field"
+                   type="date" 
+                   placeholder="Tu Fecha" 
+                   id="fecha"
+                   placeholder="dd-mm-yyyy" 
+                   min="1997-01-01" max="2030-12-31"                  
+               >
+           </div>
+           <div class="campo">
+               <label class="campo__label" for="culto">Culto:</label>
+               <input 
+                   class="campo__field visita"
+                   type="text" 
+                   placeholder="Visita" 
+                   id="culto"                   
+               >
+               <input 
+                   class="campo__field"
+                   type="text" 
+                   placeholder="Local" 
+                   id="culto"                                     
+               >
+           </div>
+           
+           <div class="cuentas">
+                <div class="entradas">
+                    <h4 class="entrada__nombre no-margin">OFRENDAS</h4>
+                    <div class="entradas__campo">                        
+                        <label class="campo__label entradas__text" for="diaria">Diaria:</label>
+                        <input 
+                            class="campo__field"
+                            type="number"                             
+                            id="diaria"
+                        >
+                        <label class="campo__label entradas__text" for="misionera">Misionera:</label>
+                        <input 
+                            class="campo__field"
+                            type="number"                             
+                            id="misionera"                   
+                        >
+                        <label class="campo__label entradas__text" for="especial">Especial:</label>
+                        <input 
+                            class="campo__field special1"
+                            type="number"                             
+                            id="especial"                   
+                        >
+                        <label class="campo__label entradas__text" for="especial">Especial:</label>
+                        <input 
+                            class="campo__field special2"
+                            type="number"                             
+                            id="especial"                   
+                        >
+                        <label class="campo__label entradas__text" for="especial">Especial:</label>
+                        <input 
+                            class="campo__field special3"
+                            type="number"                             
+                            id="especial"                   
+                        >
+                        <label class="campo__label entradas__text" for="especial">Especial:</label>
+                        <input 
+                            class="campo__field entradas__field"
+                            type="number"                             
+                            id="especial"                   
+                        >
+                    </div>
+                </div>
+                
+           </div>
+
+
+           <!-- <div class="salidas"> -->
+            <h4 class="salida__nombre no-margin">SALIDAS</h4>
+                    
+            <!-- Montos de las facturas -->
+            <div class="montos">
+                <div class="fac_group">                            
+                        
+                    <div class="divTable">
+                        <div class="divTableBody">
+                            <div class="divTableRow">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="1fact">1 Fact:</label> <input id="1fact" class="campo__field entradas__field onereceipt" type="text" /></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="2fact">2 Fact:</label> <input id="2fact" class="campo__field entradas__field tworeceipt" type="text" /></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="3fact">3 Fact:</label> <input id="3fact" class="campo__field entradas__field treereceipt" type="text" /></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="4fact">4 Fact:</label> <input id="4fact" class="campo__field entradas__field foureceipt" type="text" /></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="5fact">5 Fact:</label> <input id="5fact" class="campo__field entradas__field fivereceipt" type="text" /></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="6fact">6 Fact:</label> <input id="6fact" class="campo__field entradas__field sixreceipt" type="text" /></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="monto_group">
+                    
+                    <div class="divTable">
+                        <div class="divTableBody">
+                            <div class="divTableRow">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="monto">Monto:</label> <input id="monto" class="campo__field entradas__field amountFac1" type="number" /></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="monto">Monto:</label> <input id="monto" class="campo__field entradas__field amountFac2" type="number" /></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="monto">Monto:</label> <input id="monto" class="campo__field entradas__field amountFac3" type="number" /></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="monto">Monto:</label> <input id="monto" class="campo__field entradas__field amountFac4" type="number" /></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="monto">Monto:</label> <input id="monto" class="campo__field entradas__field amountFac5" type="number" /></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="monto">Monto:</label> <input id="monto" class="campo__field entradas__field amountFac6" type="number" /></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="group_upload">
+                    <div class="divTable">
+                        <div class="divTableBody">
+                            <div class="divTableRow">
+                                <div class="divTableCell">
+                                    
+                                    <div>
+                                        <span>Recibo</span>
+                                        <input type="file" class='fancy-file' id="archivo" name="avatar" accept="image/*" data-button="Examinar" data-empty="Sin archivos" multiple />
+                                        
+                                    </div>       
+
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+
+                
+            </div> <!--Fin Div montos-->
+        <!-- </div> -->
+        <!-- <div class="otros__title">
+            <h4 class="salida__nombre no-margin">DIEZMADORES</h4>
+            <h4 class="salida__nombre no-margin">OTROS CONCEPTOS</h4>
+        </div> -->
+        
+                   
+        <div class="otros">
+                <div class="group_uno">
+
+                    <div class="divTable">
+                        <div class="divTableBody">
+                            <div class="divTableRow">
+                                <div class="divTableCell"><h4 class="salida__nombre no-margin">DIEZMADORES</h4></div>
+                            </div>
+                            <div class="divTableRow">                                
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="d1">1:</label> <input id="d1" class="campo__field otros_fields" type="number" /></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="d2">2:</label> <input id="d2" class="campo__field otros_fields" type="number" /></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="d3">3:</label> <input id="d3" class="campo__field otros_fields" type="number" /></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="d4">4:</label> <input id="d4" class="campo__field otros_fields" type="number" /></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="d5">5:</label> <input id="d5" class="campo__field otros_fields" type="number" /></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="d6">6:</label> <input id="d6" class="campo__field otros_fields" type="number" /></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="d7">7:</label> <input id="d7" class="campo__field otros_fields" type="number" /></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="d8">8:</label> <input id="d8" class="campo__field otros_fields" type="number" /></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="d9">9:</label> <input id="d9" class="campo__field otros_fields" type="number" /></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="d10">10:</label> <input id="d10" class="campo__field otros_fields" type="number" /></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="group_dos">
+                    
+                    <div class="divTable">
+                        <div class="divTableBody">
+                            <div class="divTableRow">
+                                <div class="divTableCell">
+                                    &nbsp;
+                                </div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="d11">₡:</label> <input id="d11" class="campo__field otros_fields" type="number" /></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="d12">₡:</label> <input id="d12" class="campo__field otros_fields" type="number" /></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="d13">₡:</label> <input id="d13" class="campo__field otros_fields" type="number" /></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="d14">₡:</label> <input id="d14" class="campo__field otros_fields" type="number" /></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="d15">₡:</label> <input id="d15" class="campo__field otros_fields" type="number" /></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="d16">₡:</label> <input id="d16" class="campo__field otros_fields" type="number" /></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="d17">₡:</label> <input id="d17" class="campo__field otros_fields" type="number" /></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="d18">₡:</label> <input id="d18" class="campo__field otros_fields" type="number" /></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="d19">₡:</label> <input id="d19" class="campo__field otros_fields" type="number" /></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="d20">₡:</label> <input id="d20" class="campo__field otros_fields" type="number" /></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+
+            
+                    <div class="group_tres">
+                        
+                        <div class="divTable">
+                            <div class="divTableBody">
+                                <div class="divTableRow">
+                                    <div class="divTableCell"><h4 class="salida__nombre no-margin">OTROS CONCEPTOS</h4></div>
+                                </div>
+                                <div class="divTableRow">                                
+                                    <div class="divTableCell"><label class="campo__label entradas__text" for="c1">1:</label> <input id="c1" class="campo__field otros_fields" type="text" /></div>
+                                </div>
+                                <div class="divTableRow">
+                                    <div class="divTableCell"><label class="campo__label entradas__text" for="c2">2:</label> <input id="c2" class="campo__field otros_fields" type="text" /></div>
+                                </div>
+                                <div class="divTableRow">
+                                    <div class="divTableCell"><label class="campo__label entradas__text" for="c3">3:</label> <input id="c3" class="campo__field otros_fields" type="text" /></div>
+                                </div>
+                                <div class="divTableRow">
+                                    <div class="divTableCell"><label class="campo__label entradas__text" for="c4">4:</label> <input id="c4" class="campo__field otros_fields" type="text" /></div>
+                                </div>
+                                <div class="divTableRow">
+                                    <div class="divTableCell"><label class="campo__label entradas__text" for="c5">5:</label> <input id="c5" class="campo__field otros_fields" type="text" /></div>
+                                </div>
+                                <div class="divTableRow">
+                                    <div class="divTableCell"><label class="campo__label entradas__text" for="c6">6:</label> <input id="c6" class="campo__field otros_fields" type="text" /></div>
+                                </div>
+                                <div class="divTableRow">
+                                    <div class="divTableCell"><label class="campo__label entradas__text" for="c7">7:</label> <input id="c7" class="campo__field otros_fields" type="text" /></div>
+                                </div>
+                                <div class="divTableRow">
+                                    <div class="divTableCell"><label class="campo__label entradas__text" for="c8">8:</label> <input id="c8" class="campo__field otros_fields" type="text" /></div>
+                                </div>
+                                <div class="divTableRow">
+                                    <div class="divTableCell"><label class="campo__label entradas__text" for="c9">9:</label> <input id="c9" class="campo__field otros_fields" type="text" /></div>
+                                </div>
+                                <div class="divTableRow">
+                                    <div class="divTableCell"><label class="campo__label entradas__text" for="c10">10:</label> <input id="c10" class="campo__field otros_fields" type="text" /></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="group_cuatro">
+                        
+                        <div class="divTable">
+                            <div class="divTableBody">
+                                <div class="divTableRow">
+                                    <div class="divTableCell">
+                                        &nbsp;
+                                    </div>
+                                </div>
+                                <div class="divTableRow">
+                                    <div class="divTableCell"><label class="campo__label entradas__text" for="v11">₡:</label> <input id="v11" class="campo__field otros_fields" type="number" /></div>
+                                </div>
+                                <div class="divTableRow">
+                                    <div class="divTableCell"><label class="campo__label entradas__text" for="v12">₡:</label> <input id="v12" class="campo__field otros_fields" type="number" /></div>
+                                </div>
+                                <div class="divTableRow">
+                                    <div class="divTableCell"><label class="campo__label entradas__text" for="v13">₡:</label> <input id="v13" class="campo__field otros_fields" type="number" /></div>
+                                </div>
+                                <div class="divTableRow">
+                                    <div class="divTableCell"><label class="campo__label entradas__text" for="v14">₡:</label> <input id="v14" class="campo__field otros_fields" type="number" /></div>
+                                </div>
+                                <div class="divTableRow">
+                                    <div class="divTableCell"><label class="campo__label entradas__text" for="v15">₡:</label> <input id="v15" class="campo__field otros_fields" type="number" /></div>
+                                </div>
+                                <div class="divTableRow">
+                                    <div class="divTableCell"><label class="campo__label entradas__text" for="v16">₡:</label> <input id="v16" class="campo__field otros_fields" type="number" /></div>
+                                </div>
+                                <div class="divTableRow">
+                                    <div class="divTableCell"><label class="campo__label entradas__text" for="v17">₡:</label> <input id="v17" class="campo__field otros_fields" type="number" /></div>
+                                </div>
+                                <div class="divTableRow">
+                                    <div class="divTableCell"><label class="campo__label entradas__text" for="v18">₡:</label> <input id="v18" class="campo__field otros_fields" type="number" /></div>
+                                </div>
+                                <div class="divTableRow">
+                                    <div class="divTableCell"><label class="campo__label entradas__text" for="v19">₡:</label> <input id="v19" class="campo__field otros_fields" type="number" /></div>
+                                </div>
+                                <div class="divTableRow">
+                                    <div class="divTableCell"><label class="campo__label entradas__text" for="v20">₡:</label> <input id="v20" class="campo__field otros_fields" type="number" /></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>              
+        </div> <!--Fin Otros-->
+
+
+        <div class="pagos_ayuda">
+            <div class="group_cinco">
+
+                <div class="divTable">
+                    <div class="divTableBody">
+                        <div class="divTableRow">
+                            <div class="divTableCell"><h4 class="salida__nombre no-margin">PAGO A PASTORES</h4></div>
+                        </div>
+                        <div class="divTableRow">                                
+                            <div class="divTableCell"><label class="campo__label entradas__text" for="p1">1:</label> <input id="p1" class="campo__field otros_fields" type="text" /></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell"><label class="campo__label entradas__text" for="p2">2:</label> <input id="p2" class="campo__field otros_fields" type="text" /></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell"><label class="campo__label entradas__text" for="p3">3:</label> <input id="p3" class="campo__field otros_fields" type="text" /></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell"><label class="campo__label entradas__text" for="p4">4:</label> <input id="p4" class="campo__field otros_fields" type="text" /></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell"><label class="campo__label entradas__text" for="p5">5:</label> <input id="p5" class="campo__field otros_fields" type="text" /></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell"><label class="campo__label entradas__text" for="p6">6:</label> <input id="p6" class="campo__field otros_fields" type="text" /></div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="group_seis">
+                
+                <div class="divTable">
+                    <div class="divTableBody">
+                        <div class="divTableRow">
+                            <div class="divTableCell">
+                                &nbsp;
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell"><label class="campo__label entradas__text" for="pg11">₡:</label> <input id="pg11" class="campo__field otros_fields" type="number" /></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell"><label class="campo__label entradas__text" for="pg12">₡:</label> <input id="pg12" class="campo__field otros_fields" type="number" /></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell"><label class="campo__label entradas__text" for="pg13">₡:</label> <input id="pg13" class="campo__field otros_fields" type="number" /></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell"><label class="campo__label entradas__text" for="pg14">₡:</label> <input id="pg14" class="campo__field otros_fields" type="number" /></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell"><label class="campo__label entradas__text" for="pg15">₡:</label> <input id="pg15" class="campo__field otros_fields" type="number" /></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell"><label class="campo__label entradas__text" for="pg16">₡:</label> <input id="pg16" class="campo__field otros_fields" type="number" /></div>
+                        </div>                            
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="group_siete">
+
+                <div class="divTable">
+                    <div class="divTableBody">
+                        <div class="divTableRow">
+                            <div class="divTableCell"><h4 class="salida__nombre no-margin">AYUDAS ESPECIALES</h4></div>
+                        </div>
+                        <div class="divTableRow">                                
+                            <div class="divTableCell"><label class="campo__label entradas__text" for="e1">1:</label> <input id="e1" class="campo__field otros_fields" type="text" /></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell"><label class="campo__label entradas__text" for="e2">2:</label> <input id="e2" class="campo__field otros_fields" type="text" /></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell"><label class="campo__label entradas__text" for="e3">3:</label> <input id="e3" class="campo__field otros_fields" type="text" /></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell"><label class="campo__label entradas__text" for="e4">4:</label> <input id="e4" class="campo__field otros_fields" type="text" /></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell"><label class="campo__label entradas__text" for="e5">5:</label> <input id="e5" class="campo__field otros_fields" type="text" /></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell"><label class="campo__label entradas__text" for="e6">6:</label> <input id="e6" class="campo__field otros_fields" type="text" /></div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="group_ocho">
+                
+                <div class="divTable">
+                    <div class="divTableBody">
+                        <div class="divTableRow">
+                            <div class="divTableCell">
+                                &nbsp;
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell"><label class="campo__label entradas__text" for="ep11">₡:</label> <input id="ep11" class="campo__field otros_fields" type="number" /></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell"><label class="campo__label entradas__text" for="ep12">₡:</label> <input id="ep12" class="campo__field otros_fields" type="number" /></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell"><label class="campo__label entradas__text" for="ep13">₡:</label> <input id="ep13" class="campo__field otros_fields" type="number" /></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell"><label class="campo__label entradas__text" for="ep14">₡:</label> <input id="ep14" class="campo__field otros_fields" type="number" /></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell"><label class="campo__label entradas__text" for="ep15">₡:</label> <input id="ep15" class="campo__field otros_fields" type="number" /></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell"><label class="campo__label entradas__text" for="ep16">₡:</label> <input id="ep16" class="campo__field otros_fields" type="number" /></div>
+                        </div>                            
+                    </div>
+                </div>
+
+            </div>
+
+        </div> <!--Fin Pago Ayuda-->
+
+
+        <div class="final">
+            <div class="final__title no-margin">
+                <h4 class="salida__nombre no-margin">DESGLOSE FINAL</h4>                
+            </div>
+
+            <div class="group_final">
+                <div class="divTable">
+                    <div class="divTableBody">
+                        <div class="divTableRow">
+                            <div class="divTableCell"><label class="campo__label entradas__text" for="f17">ENTRADA TOTAL : ₡ </label> <input id="f17" class="campo__field otros_fields" style="font-size: 1.8; font-weight: bold;" type="text" /></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divTable">
+                    <div class="divTableBody">
+                        <div class="divTableRow">
+                            <div class="divTableCell"><label class="campo__label entradas__text"  for="f18">DIEZMOS : ₡</label> <input id="f18" class="campo__field otros_fields" style="font-size: 1.8; font-weight: bold;" type="text" /></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divTable">
+                    <div class="divTableBody">
+                        <div class="divTableRow">
+                            <div class="divTableCell"><label class="campo__label entradas__text"  for="f19">D DE D :₡</label> <input id="f19" class="campo__field otros_fields" style="font-size: 1.8; font-weight: bold;" type="text" /></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="group_final_two">
+                <div class="divTable">
+                    <div class="divTableBody">
+                        <div class="divTableRow">
+                            <div class="divTableCell">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="f20">PAGO PASTOR :₡</label> <input id="totalPagoPastor" class="campo__field otros_fields" style="font-size: 1.8; font-weight: bold;" type="text" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divTable">
+                    <div class="divTableBody">
+                        <div class="divTableRow">
+                            <div class="divTableCell">
+                                <div class="divTableCell"><label class="campo__label entradas__text" for="f21">ENTRADA TOTAL :₡</label> <input id="f21" class="campo__field otros_fields" style="font-size: 1.8 !important; font-weight: bold;" type="text" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+            
+
+        
+        
+
+           <div class="campo">
+               <input type="submit" value="Enviar" class="boton boton--primario">
+           </div>
+
+       </form>
+       
+   </main>
+
+  <footer class="footer">
+   <div class="contenedor">
+       <div class="barra">
+           <a href="index.html" class="logo">
+               <h1 class="logo__nombre no-margin centrar-texto"><span class="demo-icon icon-logo_transparente logo__bold">&#xe800;</span>ICM</h1>
+           </a>
+
+           <nav class="navegacion">
+               <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+               <a href="servicios.html" class="navegacion__enlace">Servicios</a>
+               <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+           </nav>
+       </div>
+   </div>
+  </footer>  
+  <script src="js/upload.js"></script>  
+  <script type="module" src="./js/tesoreria.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>  
+  
+  <script>
+    function getDate() {
+        var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth()+1; //January is 0!
+        var yyyy = today.getFullYear();
+
+        if(dd<10) {
+            dd = '0'+dd
+        } 
+
+        if(mm<10) {
+            mm = '0'+mm
+        } 
+
+        today = yyyy + '-' + mm + '-' + dd; //mm + '-' + dd + '-' + yyyy;
+        console.log(today);
+        document.getElementById("fecha").value = today;
+        }
+
+
+        window.onload = function() {
+        getDate();
+    };
+  </script>
+  
+</body>
+
+</html>

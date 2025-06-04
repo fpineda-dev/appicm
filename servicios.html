@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iglesia de Cristo Misíonera</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="icon" type="favicon/x-icon" href="img/logo_transparente.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/carrousel.css" /> 
+    <link rel="stylesheet" href="fontello-b4a708b2/css/animation.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra">
+                <a href="index.html" class="logo">
+                    <h1 class="logo__nombre no-margin centrar-texto"><span class="demo-icon icon-logo_transparente logo__bold">&#xe800;</span>ICM</h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="servicios.html" class="navegacion__enlace">Servicios</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+        <div class="slide-container"> 
+            <div class="slides">              
+              <img class="active" style="background-image: url(img/Culto7.jpg); height: 60rem; background-size: 100% 100%; background-repeat: no-repeat; background-position: center center;">
+              <img style="background-image: url(img/Cultos.jpg); height: 60rem; background-size: 100% 100%; background-repeat: no-repeat; background-position: center center;">
+              <img style="background-image: url(img/Invitacion.jpg); height: 60rem; background-size: 100% 100%; background-repeat: no-repeat; background-position: center center;">
+              <img style="background-image: url(img/Culto7.jpg); height: 60rem; background-size: 100% 100%; background-repeat: no-repeat; background-position: center center;">
+              <img style="background-image: url(img/Cultos.jpg); height: 60rem; background-size: 100% 100%; background-repeat: no-repeat; background-position: center center;">
+          </div>
+      
+          <div class="buttons">
+              <span class="next">&#10095;</span>
+              <span class="prev">&#10094;</span>
+          </div>
+      
+          <div class="dotsContainer">
+              <div class="dot active" attr='0' onclick="switchImage(this)"></div>
+              <div class="dot" attr='1' onclick="switchImage(this)"></div>
+              <div class="dot" attr='2' onclick="switchImage(this)"></div>
+              <div class="dot" attr='3' onclick="switchImage(this)"></div>
+              <div class="dot" attr='4' onclick="switchImage(this)"></div>
+          </div>
+      
+          </div>
+    </header>
+
+    <main class="contenedor">
+         <h3 class="centrar-texto">Nuestros Servicios</h3>
+          
+         <div class="servicio">
+
+            <div class="servicio_imagen">
+                <img src="img/CultoOracion.jpg" alt="Imagen del culto">
+             </div>
+    
+             <div class="servicio__informacion">
+                <h4 class="no-margin">Culto General</h4>
+                <p class="servicio__label">Día:
+                    <span class="servicio__info">Domíngo</span>
+                </p>
+    
+                <p class="servicio__label">Hora:
+                    <span class="servicio__info">10:00 AM</span>
+                </p>
+                <p class="servicio_descripcion">
+                    Donec tempor, nisl et rhoncus viverra, turpis enim convallis ligula, non hendrerit nulla tortor nec odio. Morbi non mattis nunc, elementum auctor arcu. Aliquam vestibulum arcu non sem porta auctor. Nam vel congue ligula, eu condimentum felis. Nunc aliquam hendrerit odio sit amet venenatis. Nunc varius, libero a tempor rutrum, nulla risus congue velit, nec suscipit nibh lectus ac dolor. Nulla facilisi.
+                </p>            
+            </div> <!--.servicio__informacion-->
+         </div> <!--servicio-->
+
+         <div class="servicio">
+
+            <div class="servicio_imagen">
+                <img src="img/MartesOracion.png" alt="Imagen del culto">
+             </div>
+    
+             <div class="servicio__informacion">
+                <h4 class="no-margin">Culto de Oracion</h4>
+                <p class="servicio__label">Día:
+                    <span class="servicio__info">Martes</span>
+                </p>
+    
+                <p class="servicio__label">Hora:
+                    <span class="servicio__info">07:30 PM</span>
+                </p>
+                <p class="servicio_descripcion">
+                    Donec tempor, nisl et rhoncus viverra, turpis enim convallis ligula, non hendrerit nulla tortor nec odio. Morbi non mattis nunc, elementum auctor arcu. Aliquam vestibulum arcu non sem porta auctor. Nam vel congue ligula, eu condimentum felis. Nunc aliquam hendrerit odio sit amet venenatis. Nunc varius, libero a tempor rutrum, nulla risus congue velit, nec suscipit nibh lectus ac dolor. Nulla facilisi.
+                </p>            
+            </div> <!--.servicio__informacion-->
+         </div> <!--servicio-->
+
+         <div class="servicio">
+
+            <div class="servicio_imagen">
+                <img src="img/JuevesEnseñanza.jpg" alt="Imagen del culto">
+             </div>
+    
+             <div class="servicio__informacion">
+                <h4 class="no-margin">Culto de Estudio</h4>
+                <p class="servicio__label">Día:
+                    <span class="servicio__info">Jueves</span>
+                </p>
+    
+                <p class="servicio__label">Hora:
+                    <span class="servicio__info">07:30 PM</span>
+                </p>
+                <p class="servicio_descripcion">
+                    Donec tempor, nisl et rhoncus viverra, turpis enim convallis ligula, non hendrerit nulla tortor nec odio. Morbi non mattis nunc, elementum auctor arcu. Aliquam vestibulum arcu non sem porta auctor. Nam vel congue ligula, eu condimentum felis. Nunc aliquam hendrerit odio sit amet venenatis. Nunc varius, libero a tempor rutrum, nulla risus congue velit, nec suscipit nibh lectus ac dolor. Nulla facilisi.
+                </p>            
+            </div> <!--.servicio__informacion-->
+         </div> <!--servicio-->
+    </main>
+
+   <footer class="footer">
+    <div class="contenedor">
+        <div class="barra">
+            <a href="index.html" class="logo">
+                <h1 class="logo__nombre no-margin centrar-texto"><span class="demo-icon icon-logo_transparente logo__bold">&#xe800;</span>ICM</h1>
+            </a>
+
+            <nav class="navegacion">
+                <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                <a href="servicios.html" class="navegacion__enlace">Servicios</a>
+                <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+            </nav>
+        </div>
+    </div>
+   </footer>
+
+
+
+    <script src="js/scriptCarrousel.js"></script>
+</body>
+
+</html>

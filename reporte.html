@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/reporte.css" rel="stylesheet"> <!--media="print"-->
+    <link rel="icon" type="favicon/x-icon" href="img/logo_transparente.png" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontello-b4a708b2/css/animation.css">
+    <title>Resumen Finanzas</title>
+</head>
+<body>
+    <h1>Resumen</h1>
+
+    <aside>
+        <address id="from">            
+            <span id="logoTitle"><img src="./img/logo_transparente.png" alt="logo ICM">
+            <P>Iglesia Cristo Misionera</P>
+            </span>
+            Desamparados, San Juan de Dios
+            Contiguo a la escuela Sotero Gonzales,
+            Calle la Amistad
+        </address>
+
+        <address id="to">
+            Reporte General de Finanzas
+      </address>
+    </aside>
+
+    <dl id="informations">
+      <dt>Periodo</dt>
+      <dd>
+        <input 
+            class="campo__field"
+            type="text" 
+            placeholder="Local" 
+            id="mes"  
+            size="4"                                   
+        >
+      </dd>
+      <dt>Fecha</dt>
+      <dd>
+        <input 
+            class="campo__field"
+            type="date" 
+            placeholder="Tu Fecha" 
+            id="fecha"
+            placeholder="dd-mm-yyyy" 
+            min="1997-01-01" max="2030-12-31"                  
+            >
+      </dd>
+    </dl>
+
+    <table>
+      <thead>
+        <tr>                    
+          <th>Fecha</th>
+          <th>Entradas</th>
+          <th>Salidas</th>
+        </tr>
+      </thead>
+      <!-- <tbody>
+        <tr>
+          <td>Resumen detallado</td>
+          <td id="valdate">₡34.20</td>
+          <td>100</td>
+          <td>₡3,420.00</td>
+        </tr>
+        <tr>
+          <td>Website development</td>
+          <td id="valdate">₡45.50</td>
+          <td>100</td>
+          <td>₡4,550.00</td>
+        </tr>
+        <tr>
+          <td>Website integration</td>
+          <td id="valdate">₡25.75</td>
+          <td>100</td>
+          <td>₡2,575.00</td>
+        </tr>
+      </tbody> -->
+    </table>
+
+    <footer>
+      <table id="total">
+        <thead>
+          <tr>            
+            <th>Total Entradas</th>
+            <th>Total Salidas</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+       <tbody>
+          <tr>            
+            <td id="total_entradas">₡789,012</td>
+            <td id="total_salidas">₡10,545.00</td>
+            <td id="estado">₡778,467</td>
+          </tr>
+        </tbody> 
+      </table>
+    </footer>
+    <script type="module" src="./js/reporte.js"></script>
+
+   
+</body>
+</html>
