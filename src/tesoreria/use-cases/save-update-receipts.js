@@ -59,7 +59,7 @@ const updateAllReceipts = async(objUpdateReceipts) => {
      const uppercasedObject = convertKeysToUpperCase(objUpdateReceipts);
      console.log(uppercasedObject);
 
-    const url = `http://localhost:3000/api/update_receipts/${id_receipts}`;
+    const url = `https://apicm.onrender.com/api/update_receipts/${id_receipts}`;
     const res = await fetch(url, {
         method: 'PUT', 
         body: JSON.stringify(bodyJSON),

@@ -38,7 +38,7 @@ const AllReceipts = async(objUpdateReceipts) => {
      const uppercasedObject = convertKeysToUpperCase(objUpdateReceipts);
      console.log(uppercasedObject);
 
-    const url = `http://localhost:3000/api/search_receipts/${from}/${to}/${iddepa}`;
+    const url = `https://apicm.onrender.com/api/search_receipts/${from}/${to}/${iddepa}`;
     const res = await fetch(url, {
         method: 'GET',         
         mode: 'cors'

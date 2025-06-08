@@ -69,7 +69,7 @@ const createReceipt = async(receipt) => {
 
     
 
-        const url = `http://localhost:3000/api/receipts`;
+        const url = `https://apicm.onrender.com/api/receipts`;
         const res = await fetch(url, {
             method: 'POST', 
             body: JSON.stringify(uppercasedObject),

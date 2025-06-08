@@ -40,7 +40,7 @@ const createAnotherEntrie = async(entrie) => {
      const uppercasedObject = convertKeysToUpperCase(entrie);
      console.log(uppercasedObject);
 
-    const url = `http://localhost:3000/api/another_entries`;
+    const url = `https://apicm.onrender.com/api/another_entries`;
     const res = await fetch(url, {
         method: 'POST', 
         body: JSON.stringify(uppercasedObject),

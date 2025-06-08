@@ -300,6 +300,21 @@ img {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
     }
+
+    .sobre-nosotros__texto p {
+         font-family: "Roboto", sans-serif;
+         font-optical-sizing: auto;         
+         font-style: normal;
+         font-weight: 400;
+         font-variation-settings: "wdth" 900;
+         font-size: 1.4rem;
+         text-align: justify;
+    }
+
+    .sobre-nosotros__title {
+         font-weight: bold;
+         
+    }
 }
 
 /** Servicios **/
@@ -324,6 +339,15 @@ img {
 .servicio__label {
     font-family: var(--fuenteHeading);
     font-weight: bold;
+}
+
+.servicio_descripcion {
+    font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-weight: 400;
+        font-variation-settings: "wdth" 900;
+        font-size: 1.4rem;
 }
 
 .servicio__info {
@@ -359,10 +383,15 @@ img {
     display: flex;
     margin-bottom: 2rem;
 }
+
+input#email {
+    height: -1%;
+}
+
 .campo__label {
     flex: 0 0 5rem; /*0 0 9rem;*/
     text-align: right;
-    padding-right: 1rem;
+    padding-right: 0rem;
 }
 .campo__field {
     flex: 1;

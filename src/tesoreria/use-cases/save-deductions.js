@@ -53,7 +53,7 @@ const createDeduction = async(deduction) => {
      const uppercasedObject = convertKeysToUpperCase(deduction);
      console.log(uppercasedObject);
 
-    const url = `http://localhost:3000/api/deductions`;
+    const url = `https://apicm.onrender.com/api/deductions`;
     const res = await fetch(url, {
         method: 'POST', 
         body: JSON.stringify(uppercasedObject),
