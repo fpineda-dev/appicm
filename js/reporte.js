@@ -114,29 +114,71 @@ import { foundReceipts } from '../src/tesoreria/use-cases/found-receipts.js'
                 console.log(output);
                 console.log(ObjReceipts);
                 console.log(fullObj);
+                let rowDate = ``;
+                let rowTotal = ``;
+                let rowDeduction = ``;
                 
                 
 
                 let objVal = JSON.parse(ObjReceipts)
-                for(let i = 0; i < objVal.length; i++) {
-                  console.log(`Fecha: ${objVal[i].created_at} Total: ${objVal[i].total} Deductions: ${objVal[i].Deductions}`);
-
-                  let fechaEnvio = new Date(objVal[i].created_at)
-                  console.log(formatDateISO(fechaEnvio));
+                const keys = Object.keys(objVal);
+                console.log(Object.values(objVal).length);                
+                for (let i = 0; i < keys.length; i++) {
+                  // console.log(`${key}: ${value}`);
+                  /*console.log(`Fecha: ${objVal[key].created_at} Total: ${objVal[key].total} Deductions: ${objVal[key].Deductions}`);/*/
+                  let fechaEnvio = '';
+                  let totalVal = 0;
                   
-                  if (objVal[i].deductions === null) {
-                      rowSalida = 0
-                  } else {
-                    rowSalida = objVal[i].deductions
+
+                  const key = keys[i];
+                  console.log(key, objVal[key]);
+                  if (key === 'created_at') {
+                    fechaEnvio = objVal[key]; //new Date([key][value])
+                  }                  
+                  console.log(fechaEnvio);
+
+                  if (key === 'total') {
+                    totalVal = objVal[key]
                   }
                   
-                 document.getElementsByTagName("table")[0].innerHTML+= "<tbody><tr><td>"+formatDateISO(fechaEnvio)+"</td><td>"+objVal[i].total+"</td><td>"+rowSalida+"</td></tr></tbody>"
+                  if (key === 'deductions') {
+                    if (objVal[key] === null) {
+                         rowSalida = 0
+                    } else {
+                     rowSalida = objVal[key]                     
+                    } 
+                  }
 
-                 if (objVal[i].deductions != null) {
-                     sumDeductions += parseToFloatOrZero(objVal[i].deductions);
-                 } 
+                if (key === 'created_at') {
+                 if (objVal[key] != '') {
+                    rowDate = `<tbody><tr><td>`+fechaEnvio
+                 }
+                } else if (key === 'total') {
+                    if (objVal[key] != '') {
+                    rowTotal = `</td><td>`+totalVal
+                    }
+                } else if (key === 'deductions') {
+                    if (objVal[key] != '') {
+                     rowDeduction = `</td><td>`+rowSalida
+                    }
+                }  
 
-                 sumEntrada += parseToFloatOrZero(objVal[i].total)
+                if (rowDate != `` && rowTotal != `` && rowDeduction != ``) {
+                    document.getElementsByTagName("table")[0].innerHTML+= `${rowDate}`+rowTotal+rowDeduction+`</td></tr></tbody>`
+                }
+                  
+                 
+
+                 
+                
+                 if (key === 'deductions') {
+                    if (objVal[key] != null) {
+                        sumDeductions += parseToFloatOrZero(objVal[key]);
+                    } 
+                 }
+                 
+
+                 sumEntrada += parseToFloatOrZero(totalVal)
 
                  console.log(sumEntrada);
                  console.log(sumDeductions);
