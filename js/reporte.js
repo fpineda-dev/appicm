@@ -131,37 +131,34 @@ import { foundReceipts } from '../src/tesoreria/use-cases/found-receipts.js'
                   
 
                   const key = keys[i];
-                  console.log(key, objVal[key]);
-                  if (key === 'created_at') {
-                    fechaEnvio = objVal[key]; //new Date([key][value])
-                  }                  
-                  console.log(fechaEnvio);
-
-                  if (key === 'total') {
-                    totalVal = objVal[key]
-                  }
+                  console.log(key, objVal[key].created_at);
                   
-                  if (key === 'deductions') {
-                    if (objVal[key] === null) {
+                   fechaEnvio = objVal[key].created_at; //new Date([key][value])
+                                    
+                  console.log(fechaEnvio);
+                  
+                  totalVal = objVal[key].total
+                  
+                  
+              
+                    if (objVal[key].deductions === null) {
                          rowSalida = 0
                     } else {
-                     rowSalida = objVal[key]                     
+                     rowSalida = objVal[key].deductions                     
                     } 
-                  }
+                  
 
-                if (key === 'created_at') {
-                 if (objVal[key] != '') {
+                
+                 if (objVal[key].created_at != null) {
                     rowDate = `<tbody><tr><td>`+fechaEnvio
-                 }
-                } else if (key === 'total') {
-                    if (objVal[key] != '') {
+                 } 
+                 if (objVal[key].total != null) {
                     rowTotal = `</td><td>`+totalVal
-                    }
-                } else if (key === 'deductions') {
-                    if (objVal[key] != '') {
+                 } 
+                 if (objVal[key].deductions != null) {
                      rowDeduction = `</td><td>`+rowSalida
-                    }
-                }  
+                 }
+                  
 
                 if (rowDate != `` && rowTotal != `` && rowDeduction != ``) {
                     document.getElementsByTagName("table")[0].innerHTML+= `${rowDate}`+rowTotal+rowDeduction+`</td></tr></tbody>`
@@ -171,11 +168,11 @@ import { foundReceipts } from '../src/tesoreria/use-cases/found-receipts.js'
 
                  
                 
-                 if (key === 'deductions') {
-                    if (objVal[key] != null) {
-                        sumDeductions += parseToFloatOrZero(objVal[key]);
+                 
+                    if (objVal[key].deductions != null) {
+                        sumDeductions += parseToFloatOrZero(objVal[key].deductions);
                     } 
-                 }
+                 
                  
 
                  sumEntrada += parseToFloatOrZero(totalVal)
