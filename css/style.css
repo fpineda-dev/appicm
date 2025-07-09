@@ -549,7 +549,7 @@ input#email {
         display: block;
     }
     .fancy-file__fancy-file-button{
-        background: #5BC0DE url('/img/folder.png') 4px center/25px no-repeat;        
+        background: #5BC0DE url('https://fpineda-dev.github.io/appicm/img/folder.png') 4px center/25px no-repeat;        
         border: 1px solid #5BC0DE;
         color: #FFFFFF;
         white-space: nowrap;
