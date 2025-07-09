@@ -1372,7 +1372,7 @@ btnSave.addEventListener('click', async (e) => {
 
             console.log(`type img ${typeof(myImage)}`);
             console.log(`is img ${isObjectEmpty(myImage)}`);
-            if (isObjectEmpty(myImage)) {
+            if (!isObjectEmpty(myImage)) {
                 divImg.removeChild(myImage);
             }            
             
