@@ -60,13 +60,13 @@ function indicators(){
   for(let i = 0; i < dots.length; i++){
     dots[i].className = dots[i].className.replace(' active', '');
   }
-  console.log(`After ${dots.length}`);
+  //console.log(`After ${dots.length}`);
 
   if (dots.length <= counter) { // 
     counter = 0        
   }
 
-  console.log(`This Value ${counter}`);
+  //console.log(`This Value ${counter}`);
   
    dots[counter].className += ' active';
 }

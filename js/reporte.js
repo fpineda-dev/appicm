@@ -163,17 +163,10 @@ import { foundReceipts } from '../src/tesoreria/use-cases/found-receipts.js'
                 if (rowDate != `` && rowTotal != `` && rowDeduction != ``) {
                     document.getElementsByTagName("table")[0].innerHTML+= `${rowDate}`+rowTotal+rowDeduction+`</td></tr></tbody>`
                 }
-                  
-                 
-
-                 
-                
                  
                     if (objVal[key].deductions != null) {
                         sumDeductions += parseToFloatOrZero(objVal[key].deductions);
                     } 
-                 
-                 
 
                  sumEntrada += parseToFloatOrZero(totalVal)
 

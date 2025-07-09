@@ -382,6 +382,8 @@ img {
 .campo {
     display: flex;
     margin-bottom: 2rem;
+    justify-content: space-between;
+    align-items: center;
 }
 
 input#email {
@@ -424,7 +426,7 @@ input#email {
     .campo:nth-child(3) {        
         display: flex;
         flex-direction: row;                  
-        gap: 2rem;        
+        gap: 2rem;                
     }
 }
 

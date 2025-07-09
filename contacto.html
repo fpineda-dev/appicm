@@ -56,31 +56,36 @@
          <h3 class="centrar-texto">Contactenos</h3>
          <div class="contacto-bg"></div>
          <form class="formulario">
-            <div class="campo">
-                <label class="campo__label" for="nombre">Nombre</label>
+            <label class="campo__label" for="nombre">Nombre</label>
+            <div class="campo" id="idname">                
                 <input 
                     class="campo__field"
                     type="text" 
                     placeholder="Tu Nombre" 
                     id="nombre"
+                    required
                 >
             </div>
-            <div class="campo">
-                <label class="campo__label" for="email">E-mail</label>
+            <label class="campo__label" for="email">E-mail</label>
+            <div class="campo" id="idmail">               
+                
                 <input 
                     class="campo__field"
                     type="email" 
-                    placeholder="Tu E-mail" 
+                    placeholder="Tu E-mail"                     
                     id="email"
+                                        
                 >
+                <!-- <span id="emailFeedback" style="color: red;"></span> -->
             </div>
-            <div class="campo">
-                <label class="campo__label" for="mensaje">Mensaje</label>
+            <label class="campo__label" for="mensaje">Mensaje</label>
+            <div class="campo" id="idmessage">                
                 <textarea 
                     class="campo__field campo__field--textarea"
                     id="mensaje"
-                ></textarea>
+                ></textarea>                
             </div>
+            <span id="countletter" style="font-size: 12PX; color: green;"></span>
 
             <div class="campo">
                 <input type="submit" value="Enviar" class="boton boton--primario">
@@ -107,7 +112,10 @@
 
 
 
-    <script src="js/scriptCarrousel.js"></script>
+   <script type="module" src="js/contacto.js"></script> 
+   <script src="js/scriptCarrousel.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
 </body>
 
 </html>

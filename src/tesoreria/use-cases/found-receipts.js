@@ -19,7 +19,7 @@ export const foundReceipts = async( receiptsLike ) => {
         return foundObjReceipts;
         
     } catch (error) {
-        console.log(`[save-entries] Error Detail ${error}`);
+        console.log(`[foundReceipts] Error Detail ${error}`);
         
     }
     
@@ -31,11 +31,11 @@ export const foundReceipts = async( receiptsLike ) => {
  * @param {like<AllReceipts>} Idreceipts
  */
 
-const AllReceipts = async(objUpdateReceipts) => {    
+const AllReceipts = async(objFoundReceipts) => {    
 
-    const { from, to, iddepa } = objUpdateReceipts; 
+    const { from, to, iddepa } = objFoundReceipts; 
      
-     const uppercasedObject = convertKeysToUpperCase(objUpdateReceipts);
+     const uppercasedObject = convertKeysToUpperCase(objFoundReceipts);
      console.log(uppercasedObject);
 
     const url = `https://apicm.onrender.com/api/search_receipts/${from}/${to}/${iddepa}`;
