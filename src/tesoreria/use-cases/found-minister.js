@@ -9,8 +9,8 @@ export const foundMinister = async (id) => {
     console.log(id);
 
     try {
-
-        const res = await fetch(`/helper/MOCK_DATA.json`, {
+        // /helper/MOCK_DATA.json
+        const res = await fetch(`https://fpineda-dev.github.io/appicm/helper/MOCK_DATA.json`, {
             method: 'GET',
             mode: 'cors'
         },
