@@ -1363,7 +1363,7 @@ btnSave.addEventListener('click', async (e) => {
                 divImg.removeChild(conexImg);
             } else {
              //wirelesImg.setAttribute('class', 'unconected');
-             wirelesImg.setAttribute('src', '/img/WirelesUnSignal.png');
+             wirelesImg.setAttribute('src', 'https://fpineda-dev.github.io/appicm/img/WirelesUnSignal.png');
              divImg.appendChild(wirelesImg);              
             }
             return;
@@ -1377,7 +1377,7 @@ btnSave.addEventListener('click', async (e) => {
             }            
             
             //idEntrie = allData['ID_FINANCIAL_STATEMENTS']
-            wirelesImg.setAttribute('src', '/img/WirelesSignal.png');    
+            wirelesImg.setAttribute('src', 'https://fpineda-dev.github.io/appicm/img/WirelesSignal.png');    
             divImg.appendChild(wirelesImg);        
             // wirelesImg.src = '/img/WirelesSignal.png';
             reviewServer = allData;
