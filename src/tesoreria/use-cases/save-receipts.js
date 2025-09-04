@@ -65,14 +65,15 @@ export const saveReceipts = async( receiptsLike ) => {
 const createReceipt = async(receipt) => {
 
     const uppercasedObject = convertKeysToUpperCase(receipt);
-     console.log(uppercasedObject);
+    let formatJSONObj = JSON.stringify(uppercasedObject)
+     console.log(formatJSONObj);
 
     
 
         const url = `https://apicm.onrender.com/api/receipts`;
         const res = await fetch(url, {
             method: 'POST', 
-            body: JSON.stringify(uppercasedObject),
+            body: formatJSONObj,
             headers: {
                 'Content-Type': 'application/json'
             },
